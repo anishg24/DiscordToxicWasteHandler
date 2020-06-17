@@ -47,16 +47,16 @@ your own discord bot and invite it to your sever. Be sure to get the token!.
 Your bot should come online and delete any toxic messages it finds.
 
 ### Features/To-Do:
--[x] Detects toxic messages
--[x] Deletes toxic messages
--[x] Notifies when deleting a toxic message
--[ ] Configurable
--[ ] Punishments based on what the comment is classified as (according to the model)
+- [x] Detects toxic messages
+- [x] Deletes toxic messages
+- [x] Notifies when deleting a toxic message
+- [ ] Configurable
+- [ ] Punishments based on what the comment is classified as (according to the model)
     * Possible options: `["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]`
     * These are supported by the model, and can be configured to dish out punishment in a future release
--[ ] Muting Users
--[ ] Kick/Ban Users based on conditions
--[ ] Logging
+- [ ] Muting Users
+- [ ] Kick/Ban Users based on conditions
+- [ ] Logging
 
 ## Releases
 - 1.0.0 (6/17/2020): First working release.
