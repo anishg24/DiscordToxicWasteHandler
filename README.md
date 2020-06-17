@@ -32,7 +32,43 @@ control some users of Discord who wish to make the servers toxic and not fun.
     * Pandas
 
 ## Getting Started
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/))
+1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. Head to the releases to download the `model.h5` file and place it in `model/` (where `tokenizer.pkl` is located).
+3. Setup a virtual environment, or use your default environment.
+4. `pip install -r requirements.txt`
+5. Follow these [instructions](https://discordpy.readthedocs.io/en/latest/discord.html#discord-intro) for creating
+your own discord bot and invite it to your sever. Be sure to get the token!.
+6. Create a `.env` file with the contents below:
+    ```.env
+    TOKEN=YOURTOKENHERE
+    ```
+7. `python main.py`
+
+Your bot should come online and delete any toxic messages it finds.
+
+### Features/To-Do:
+-[x] Detects toxic messages
+-[x] Deletes toxic messages
+-[x] Notifies when deleting a toxic message
+-[ ] Configurable
+-[ ] Punishments based on what the comment is classified as (according to the model)
+    * Possible options: `["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]`
+    * These are supported by the model, and can be configured to dish out punishment in a future release
+-[ ] Muting Users
+-[ ] Kick/Ban Users based on conditions
+-[ ] Logging
+
+## Releases
+- 1.0.0 (6/17/2020): First working release.
+
+## Contributors
+Creator: [Anish Govind][github]
+
+Ways to contact:
+* [E-Mail](anishg24@gmail.com)
+
+**IF YOU FIND ANY ISSUES OR BUGS PLEASE OPEN AN ISSUE**
+
 
 [github]: https://github.com/anishg24
 [dataset]: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data
